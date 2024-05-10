@@ -209,7 +209,7 @@
 .center-menu {
     display: flex;
     width: 100lvw;
-    height: 100vw;
+    height: 120vw;
     flex-direction: column;
     justify-content: center;
     gap: 2vw;
@@ -225,7 +225,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     transition: .5s;
-    margin-top: -100vw;
+    margin-top: -120vw;
     /* border-left: 2px solid rgba(255, 255, 20, 0.5);
     border-top: 2px solid rgba(255, 255, 20, 0.5); */
 }
