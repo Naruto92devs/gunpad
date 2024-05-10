@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from "react-router-dom";
 import './Navbar.css';
 import logo from '../Images/logo.png'
 import btnarrow from '../Images/btn-arrow.png';
@@ -38,6 +39,12 @@ function Navbar() {
               </a>
             </div>
             <div className={isActive ? 'center-menu active' : 'center-menu'}>
+              <NavLink to="/" onClick={toggleClass} className="tg">
+                <li>Home</li>
+              </NavLink>
+              <NavLink to="dapp" onClick={toggleClass} className="tg">
+                <li>Dapp</li>
+              </NavLink>
               <a href="#about" onClick={toggleClass} className="tg">
                 <li>About Us</li>
               </a>
