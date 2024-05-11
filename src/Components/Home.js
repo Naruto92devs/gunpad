@@ -66,7 +66,7 @@ function Home() {
               GunPad is your trusted platform for early-stage crypto opportunities 
               that offer potential for substantial growth
             </p>
-            <a href="/" className="btn">
+            <a href="/dapp" className="btn">
               Presale <img src={whitearrow} alt="" />
             </a>
             {/* <a href="#" className="btn" id="trans">

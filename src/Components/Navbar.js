@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Navbar.css';
 import logo from '../Images/logo.png'
 import btnarrow from '../Images/btn-arrow.png';
@@ -42,9 +42,6 @@ function Navbar() {
               <NavLink to="/" onClick={toggleClass} className="tg">
                 <li>Home</li>
               </NavLink>
-              <NavLink to="dapp" onClick={toggleClass} className="tg">
-                <li>Dapp</li>
-              </NavLink>
               <a href="#about" onClick={toggleClass} className="tg">
                 <li>About Us</li>
               </a>
@@ -60,9 +57,11 @@ function Navbar() {
               <a href="https://twitter.com/GunPadLaunchpad" onClick={toggleClass} className="tg">
                 <li>Twitter</li>
               </a>
-              <a href="/" onClick={toggleClass} className="btn">
+              <Link to='/dapp'>
+              <a  onClick={toggleClass} className="btn">
                 Presale <img src={btnarrow} alt='logo' />
               </a>
+              </Link>
             </div>
             <div onClick={toggleClass} className="navbar-toggle">
               <span className={isActive ? 'active1' : ''} />
