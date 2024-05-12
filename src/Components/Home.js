@@ -22,6 +22,8 @@ import join_bg2 from '../Images/join-bg-2.png';
 import faq_bg from '../Images/faq-bg.png';
 import join_img from '../Images/join-img.png';
 import join_img2 from '../Images/join-img-2.png';
+import x from '../Images//x.png';
+import { Link } from 'react-router-dom';
 // import github from './Images/github.png';
 
 function Home() {
@@ -58,17 +60,19 @@ function Home() {
           <img src={herobg2} alt="" className="hero-bg-2" />
           <div className="left">
             <h1>
-            Hit Your Target with  <span>Top  </span> Crypto <span>Presales</span>
+            GunPad <br/> Your <span>LaunchPad</span><br/> Powered by <span>SolGun</span>
             </h1>
             <p>
-              Welcome to GunPad. Start your crypto investment journey
+              Start your crypto investment journey
               with direct access to exclusive presales.
               GunPad is your trusted platform for early-stage crypto opportunities 
               that offer potential for substantial growth
             </p>
-            <a href="/dapp" className="btn">
-              Presale <img src={whitearrow} alt="" />
-            </a>
+            <Link to='/presale'>
+          <a  className="btn">
+            Presale <img src={whitearrow} alt="" />
+          </a>
+          </Link>
             {/* <a href="#" className="btn" id="trans">
               Buy $VPS <img src={whitearrow} alt="" />
             </a> */}
@@ -103,14 +107,16 @@ function Home() {
         {/* ---------------features---------- */}
         <section className="feature" id='key'>
           <h2>Key Features</h2>
-          <p className="f-para">
+          {/* <p className="f-para">
             lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam
-          </p>
-          <a href="/" className="btn">
-            Open App <img src={whitearrow} alt="" />
+          </p> */}
+          <Link to='/presale'>
+          <a  className="btn">
+            Presale <img src={whitearrow} alt="" />
           </a>
+          </Link>
           <div className="feature-content">
             <div className="feature-box">
               <img src={f1} alt="" />
@@ -169,7 +175,7 @@ function Home() {
                 What is Gunpad??
               </button>
               <div className={isActive1 ? 'panel active24' : 'panel'}>
-                <p>
+                <p><br/>
                 GunPad is a private launchpad offering exclusive access to presales of promising crypto projects. We connect investors with early opportunities to invest in the next big crypto innovations
                 </p>
               </div>
@@ -179,7 +185,7 @@ function Home() {
               How do I know the presales are safe to invest in?
               </button>
               <div className={isActive2 ? 'panel active24' : 'panel'}>
-                <p>
+                <p><br/>
                 Each project featured on GunPad undergoes a thorough vetting process by our team of experts. We assess the viability, security, and potential of each project to ensure only the highest quality opportunities are presented to our users.
                 </p>
               </div>
@@ -189,7 +195,7 @@ function Home() {
                   Who can join to presales ?
               </button>
               <div className={isActive3 ? 'panel active24' : 'panel'}>
-                <p>
+                <p><br/>
                 GunPad is open to all investors interested in cryptocurrency, from beginners to seasoned experts. Our platform is designed to be user-friendly and accessible to everyone.
                 </p>
               </div>
@@ -199,7 +205,7 @@ function Home() {
               How does GunPad select the crypto projects it offers?
               </button>
               <div className={isActive4 ? 'panel active24' : 'panel'}>
-                <p>
+                <p><br/>
                 Our selection process is rigorous and data-driven. We collaborate with industry experts to analyze market trends, project leadership and long-term potential. Only projects that meet our high standards for growth potential, innovation, and security are chosen for our presales.
                 </p>
               </div>
@@ -209,8 +215,12 @@ function Home() {
               How do I participate in a presale and what are the steps involved?
               </button>
               <div className={isActive5 ? 'panel active24' : 'panel'}>
-                <p>
-                To join a presale on GunPad, simply send your investment to the crypto address we provide. After sending, fill out the Google Form with your transaction details to confirm your participation. Make sure all information is correct to ensure your investment is processed smoothly.
+                <p><br/>
+                To take part in a presale event on Gunpad, please follow these simple steps:<br/><br/>
+                Connect Your Wallet: Visit the Gunpad presale page. Locate and click on the ‘Connect Wallet’ button. Follow the prompts to securely connect your digital wallet to the platform.<br/><br/>
+                Choose Contribution Amount: Once your wallet is connected, determine how much you would like to contribute to the presale. Enter the desired amount in the specified field on the presale page.<br/><br/>
+                Contribute: After entering your contribution amount, click the ‘Contribute’ button. You will need to confirm the transaction in your wallet to finalize your participation.<br/><br/>
+                That’s it! After these steps, you have successfully participated in the presale on Gunpad.
                 </p>
               </div>
             </div>
@@ -221,11 +231,16 @@ function Home() {
             <div className="left">
               <h2>Join our Community</h2>
               <p>
-              Build the Future at Gunpad—Join Us!
+              Build the Future at GunPad—Join Us!
               </p>
+              <div className='btn-group'>
               <a href="https://t.me/GunPad" className="btn">
                 Telegram <img src={whitearrow} alt="" />
               </a>
+              <a href="https://twitter.com/GunPadLaunchpad" className="btn-2">
+                 Twitter
+              </a>
+              </div>
             </div>
             <div className="right">
               <img src={join_img} alt="" className="join-img" />

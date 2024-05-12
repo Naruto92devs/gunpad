@@ -370,6 +370,9 @@ img{
     text-align: center;
     background: #140819;
 }
+.feature h2{
+    margin-bottom: 2vw;
+}
 .feature p.f-para {
     padding: 0 15vw;
     margin-bottom: 2vw;
@@ -782,6 +785,13 @@ text-align: left;
     gap: 2vw;
     align-items: flex-start;
   }
+  .join-us-wrap .btn-group {
+    margin-left: 0;
+  }
+  .join-us-wrap .btn-group .btn-2{
+    padding: 0.7vw 4vw;
+  }
+  
   .join-us-wrap .right{
     width: 35%;
   }

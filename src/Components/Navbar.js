@@ -57,7 +57,7 @@ function Navbar() {
               <a href="https://twitter.com/GunPadLaunchpad" onClick={toggleClass} className="tg">
                 <li>Twitter</li>
               </a>
-              <Link to='/dapp'>
+              <Link to='/presale'>
               <a  onClick={toggleClass} className="btn">
                 Presale <img src={btnarrow} alt='logo' />
               </a>

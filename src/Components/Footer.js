@@ -34,10 +34,10 @@ function Footer() {
             GunPad is your trusted platform for early-stage crypto opportunities that offer potential for substantial growth
             </p>
             <div className="socials">
-              <a href="/">
+              <a href="https://t.me/GunPad">
                 <img src={telegram} alt="" />
               </a>
-              <a href="/">
+              <a href="https://twitter.com/GunPadLaunchpad">
                 <img src={x} alt="" />
               </a>
               {/* <a href="">
@@ -93,14 +93,14 @@ function Footer() {
               </li> */}
             </ul>
           </div>
-          <div className="contact">
+          {/* <div className="contact">
             <p className="p-1">Contact</p>
             <ul>
               <li>
                 <a href="mailto:Hello@gunpad.vip">Hello@gunpad.vip</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </footer>
         <div className={isActive6 ? 'alert active25' : 'alert'}>
               <h2>Terms OF Use</h2>
